@@ -1,8 +1,10 @@
+#sier velkommen og spør hva du heter og lagrer og bruker det for å si velkommen.
 print("Velkommen til dette Quiz-spillet!")
 navn = input("Hva heter du? ")
 print("Så kjekt at du vil være med " + navn + "!")
 poeng = 0
 
+#spør deg spørsmål hvis du får riktig gir deg + 1 poeng og ingen ting hvis du svarer feil.
 svar1 = input("Første spørsmål: Hva er hovedstaden i Norge? ")
 if svar1.lower() == "oslo":
     print("Det er riktig! Godt jobbet :)")
@@ -24,6 +26,7 @@ if svar3.lower() == "brann":
 else:
     print("Beklager, men det er feil svar.")
 
+#her får du en beskjed som vil variere dersom du har mindre eller mere poeng.
 print(f"Gratulerer {navn}! Du fikk {poeng} poeng!")
 if poeng == 3:
     print("Godt jobbet! Du fikk full pott :)")
